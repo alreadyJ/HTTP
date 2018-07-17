@@ -2,6 +2,7 @@
 
 <h4>2018-07-16</h4>
 <hr/>
+
 1. 그 어떤 것이라도 리소스가 될 수 있다. (image, text, html, video, spread shit, web gateway, search engine, ...)
 2. HTTP/1.0 부터 MIME(Multipurpose Internet Mail Extensions)를 기술하고 라벨을 붙이기 위해 채택 되었다. (ex, image/jpeg)
 
@@ -47,6 +48,7 @@ HTTP 버전
 
 <h4>2018-07-17</h4>
 <hr/>
+
 1. proxy는 주로 보안을 위해 사용되며 요청과 응답을 필터링한다.
 2. 캐시는 사본을 저장하는 것으로, 속도의 향상, 프라이버시를 보호하는 역할을 맡는다.
 3. 게이트웨이는 다른 서버들의 중개자로 동작하는 특별한 서버이며, HTTP 트래픽을 다른 프로토콜로 변환하기 위해 사용된다.
