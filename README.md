@@ -56,7 +56,7 @@ HTTP 버전
 5. HTTP/SSL 터널은 HTTP 요청을 받아들여 목적지의 주소와 포트번호로 커넥션을 맺는다.
 
 ````
-<schem>://<user-name>:<password>@<host>:<port>/<path>;<parameter>?<query>#<fragment>
+<scheme>://<user-name>:<password>@<host>:<port>/<path>;<parameter>?<query>#<fragment>
 ````
 
 6. 스킴은 사용할 프로토콜을 말한다.
@@ -106,7 +106,7 @@ OPTIONS Request 보내보기
 |<center>203</center>| <center>non-authoritative infomation</center> |<center>원래 서버가 아닌, 중개자의 리소스를 반환했다. 다만 리소스에 대한 메타 정보를 검증하지 못했다.</center> |
 |<center>204</center>| <center>no content</center> |<center>헤더와 상태줄을 포함하지만 본문은 포함하지 않는다. 주로 폼을 리프레시할 때 사용한다.</center> |
 |<center>205</center>| <center>reset content</center> |<center>HTML form에 채워진 모든 값을 비워라.</center> |
-|<center>206</center>| <center>reset content</center> |<center>부분 혹은 범위 요청이 성공했다. 나중에 이어서 요청할 수 있다. 206 응답에서는 Content-Range와 Date 헤더를 포함해야하며, Etag와 Content-Location 중 하나의 헤더도 포함해야 한다.</center> |
+|<center>206</center>| <center>partical content</center> |<center>부분 혹은 범위 요청이 성공했다. 나중에 이어서 요청할 수 있다. 206 응답에서는 Content-Range와 Date 헤더를 포함해야하며, Etag와 Content-Location 중 하나의 헤더도 포함해야 한다.</center> |
 
 </br>
 
@@ -115,7 +115,7 @@ OPTIONS Request 보내보기
 |<center>300</center>| <center>multiple choices</center> |<center>클라이언트가 동시에 여러 리소스를 가리키는 URL을 요청한 경우 그 리소스의 목록과 함께 반환</center> |
 |<center>301</center>| <center>moved permanently</center> |<center>요청한 URL이 옮겨졌을 때 사용한다. Must include Location header.</center> |
 |<center>302</center>| <center>found</center> |<center>301과 같으나  클라이언트는 Location 헤더로 주어진 URL을 리로스를 임시로 가리키기 위한 목적으로 사용해야 한다.</center> |
-|<center>303</center>| <center>see other</center> |<center>301과 같으나 주목적은 POST 요청에 대한 응답으로 클라이언트에게 리소스의 우치를 알려주는 것이다.</center> |
+|<center>303</center>| <center>see other</center> |<center>301과 같으나 주목적은 POST 요청에 대한 응답으로 클라이언트에게 리소스의 위치를 알려주는 것이다.</center> |
 |<center>304</center>| <center>not modified</center> |<center>이 상태코드를 동반한 응답은 엔티티 본문을 가져서는 안된다.</center> |
 |<center>305</center>| <center>use proxy</center> |<center>리소스가 반드시 프락시를 통해 접근 되어야함, Location 헤더에는 프락시의 위치를 포함한다.</center> |
 |<center>307</center>| <center>temporary Redirect</center> |<center>302와 완전히 동일하다.</center> |
