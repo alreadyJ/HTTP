@@ -139,6 +139,8 @@ OPTIONS Request 보내보기
 |<center>415</center>| <center>unsupported media type</center> |<center>서버가 인식할 수 없는 미디어 타입의 내용을 보냈을 때 사용한다.</center> |
 |<center>416</center>| <center>requested range not satisfiable</center> |<center>잘못된 범위요청을 한 경우에 사용한다.</center> |
 |<center>417</center>| <center>expectation failed</center> |<center>요청에 포함된 Expect 요청 헤더에 서버가 만족시킬 수없는 기대가 담겨 있는 경우에 사용한다.</center> |
+|<center>429</center>| <center>too many requests</center> |<center>서버가 받는 요청이 너무 많은 경우</center> |
+
 
 </br>
 
